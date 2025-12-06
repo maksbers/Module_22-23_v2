@@ -944,6 +944,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1650391568}
     m_Modifications:
+    - target: {fileID: 1993450803814285189, guid: 131a8721fb5e30c40b62dd0e175b9351,
+        type: 3}
+      propertyPath: _damageRadius
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2053231207531670370, guid: 131a8721fb5e30c40b62dd0e175b9351,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -998,6 +1003,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bomb (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6721321093545368790, guid: 131a8721fb5e30c40b62dd0e175b9351,
+        type: 3}
+      propertyPath: m_Radius
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3979,6 +3989,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1650391568}
     m_Modifications:
+    - target: {fileID: 1993450803814285189, guid: 131a8721fb5e30c40b62dd0e175b9351,
+        type: 3}
+      propertyPath: _damageRadius
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2053231207531670370, guid: 131a8721fb5e30c40b62dd0e175b9351,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4033,6 +4048,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bomb (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6721321093545368790, guid: 131a8721fb5e30c40b62dd0e175b9351,
+        type: 3}
+      propertyPath: m_Radius
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6630,6 +6650,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1650391568}
     m_Modifications:
+    - target: {fileID: 1993450803814285189, guid: 131a8721fb5e30c40b62dd0e175b9351,
+        type: 3}
+      propertyPath: _damageRadius
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2053231207531670370, guid: 131a8721fb5e30c40b62dd0e175b9351,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6684,6 +6709,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bomb (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6721321093545368790, guid: 131a8721fb5e30c40b62dd0e175b9351,
+        type: 3}
+      propertyPath: m_Radius
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12331,6 +12361,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1650391568}
     m_Modifications:
+    - target: {fileID: 1993450803814285189, guid: 131a8721fb5e30c40b62dd0e175b9351,
+        type: 3}
+      propertyPath: _damageRadius
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2053231207531670370, guid: 131a8721fb5e30c40b62dd0e175b9351,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12385,6 +12420,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bomb (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6721321093545368790, guid: 131a8721fb5e30c40b62dd0e175b9351,
+        type: 3}
+      propertyPath: m_Radius
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14156,6 +14196,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1650391568}
     m_Modifications:
+    - target: {fileID: 1993450803814285189, guid: 131a8721fb5e30c40b62dd0e175b9351,
+        type: 3}
+      propertyPath: _damageRadius
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2053231207531670370, guid: 131a8721fb5e30c40b62dd0e175b9351,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14210,6 +14255,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bomb (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6721321093545368790, guid: 131a8721fb5e30c40b62dd0e175b9351,
+        type: 3}
+      propertyPath: m_Radius
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14668,6 +14718,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1650391568}
     m_Modifications:
+    - target: {fileID: 1993450803814285189, guid: 131a8721fb5e30c40b62dd0e175b9351,
+        type: 3}
+      propertyPath: _damageRadius
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2053231207531670370, guid: 131a8721fb5e30c40b62dd0e175b9351,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14722,6 +14777,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bomb (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6721321093545368790, guid: 131a8721fb5e30c40b62dd0e175b9351,
+        type: 3}
+      propertyPath: m_Radius
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15211,6 +15271,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1650391568}
     m_Modifications:
+    - target: {fileID: 1993450803814285189, guid: 131a8721fb5e30c40b62dd0e175b9351,
+        type: 3}
+      propertyPath: _damageRadius
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2053231207531670370, guid: 131a8721fb5e30c40b62dd0e175b9351,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15265,6 +15330,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bomb (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6721321093545368790, guid: 131a8721fb5e30c40b62dd0e175b9351,
+        type: 3}
+      propertyPath: m_Radius
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23227,6 +23297,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1650391568}
     m_Modifications:
+    - target: {fileID: 1993450803814285189, guid: 131a8721fb5e30c40b62dd0e175b9351,
+        type: 3}
+      propertyPath: _damageRadius
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2053231207531670370, guid: 131a8721fb5e30c40b62dd0e175b9351,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23281,6 +23356,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bomb (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6721321093545368790, guid: 131a8721fb5e30c40b62dd0e175b9351,
+        type: 3}
+      propertyPath: m_Radius
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32157,6 +32237,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1650391568}
     m_Modifications:
+    - target: {fileID: 1993450803814285189, guid: 131a8721fb5e30c40b62dd0e175b9351,
+        type: 3}
+      propertyPath: _damageRadius
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2053231207531670370, guid: 131a8721fb5e30c40b62dd0e175b9351,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32211,6 +32296,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bomb
+      objectReference: {fileID: 0}
+    - target: {fileID: 6721321093545368790, guid: 131a8721fb5e30c40b62dd0e175b9351,
+        type: 3}
+      propertyPath: m_Radius
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
