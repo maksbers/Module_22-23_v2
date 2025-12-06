@@ -2,10 +2,22 @@ using UnityEngine;
 
 public class BombView : MonoBehaviour
 {
-    [SerializeField] private Bomb _bomb;
+    private readonly int IsActivatedKey = Animator.StringToHash("IsActivated");
+
+    [SerializeField] private ParticleSystem _explosionEffect;
+
+    private Bomb _bomb;
+    private Animator _animator;
 
     private bool _isActivated = false;
     private float _timer;
+
+
+    private void Awake()
+    {
+        _bomb = GetComponent<Bomb>();
+        _animator = GetComponent<Animator>();
+    }
 
     private void OnDrawGizmos()
     {
@@ -21,6 +33,7 @@ public class BombView : MonoBehaviour
         if (other.GetComponent<IDamageable>() != null)
         {
             _isActivated = true;
+            _animator.SetTrigger(IsActivatedKey);
             _timer = 0f;
         }
     }
@@ -36,10 +49,10 @@ public class BombView : MonoBehaviour
     private void RunExplosionProcess()
     {
         _timer += Time.deltaTime;
-        transform.localScale = Vector3.Lerp(Vector3.one, Vector3.zero, _timer / _bomb.Delay);
 
         if (_timer >= _bomb.Delay)
         {
+            PlayEffect();
             Explode();
         }
     }
@@ -57,5 +70,11 @@ public class BombView : MonoBehaviour
         }
 
         Destroy(gameObject);
+    }
+
+    private void PlayEffect()
+    {
+        ParticleSystem instantiatedEffect = GameObject.Instantiate(_explosionEffect, transform.position, Quaternion.identity);
+        instantiatedEffect.Play();
     }
 }

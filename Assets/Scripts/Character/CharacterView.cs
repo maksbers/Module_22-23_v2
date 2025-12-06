@@ -5,7 +5,7 @@ public class CharacterView : MonoBehaviour
     private float _runningThreshold = 0.1f;
     private readonly int IsRunningKey = Animator.StringToHash("IsRunning");
     private readonly int DieKey = Animator.StringToHash("Die");
-    private readonly int IsAttacked = Animator.StringToHash("IsAttacked");
+    private readonly int IsAttackedKey = Animator.StringToHash("IsAttacked");
 
     private const string InjuredLayerName = "InjuredLayer";
     private int _injuredLayerIndex;
@@ -37,7 +37,7 @@ public class CharacterView : MonoBehaviour
 
         if (_character.TryGetDamageTaken())
         {
-            _animator.SetTrigger(IsAttacked);
+            _animator.SetTrigger(IsAttackedKey);
         }
 
         if (_character.CurrentVelocity.magnitude > _runningThreshold)
