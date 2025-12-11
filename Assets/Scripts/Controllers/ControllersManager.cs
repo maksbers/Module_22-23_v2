@@ -1,14 +1,14 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class ControllersSwitcher : MonoBehaviour
+public class ControllersManager : MonoBehaviour
 {
     [SerializeField] private Character _character;
     [SerializeField] private ClickPointerView _clickPointerView;
 
-    private Controller _manualCharacterController;
+    private Controller _playerCharacterController;
     private Controller _aiCharacterController;
-    private Controller _currentController;
+    private Controller _playerAiCharacterSwitchController;
 
     private GroundClickRaycaster _groundClickRaycaster;
     private InputController _inputController;
@@ -31,40 +31,23 @@ public class ControllersSwitcher : MonoBehaviour
             new RandomDirectionalMovableController(_character, queryFilter),
             new AlongMovableVelocityRotatableController(_character, _character));
 
-        _manualCharacterController = new CompositeController(
+        _playerCharacterController = new CompositeController(
             new TargetDirectionalMovableController(_character, _inputController, queryFilter),
             new AlongMovableVelocityRotatableController(_character, _character));
 
+        _playerAiCharacterSwitchController = new PlayerAiCharacterSwitchController(
+            _aiCharacterController,
+            _playerCharacterController,
+            _inputController,
+            _switchTime);
+
         _inputController.Enable();
-        _manualCharacterController.Enable();
-        _aiCharacterController.Enable();
+        _playerAiCharacterSwitchController.Enable();
     }
 
     private void Update()
     {
         _inputController.Update(Time.deltaTime);
-
-        Controller targetController;
-
-        if (IsManualControlActive())
-            targetController = _manualCharacterController;
-        else
-            targetController = _aiCharacterController;
-
-        if (_currentController != targetController)
-            SwitchController(targetController);
-
-        _currentController.Update(Time.deltaTime);
+        _playerAiCharacterSwitchController.Update(Time.deltaTime);
     }
-
-    private void SwitchController(Controller newController)
-    {
-        if (_currentController != null)
-            _currentController.Disable();
-
-        _currentController = newController;
-        _currentController.Enable();
-    }
-
-    private bool IsManualControlActive() => _inputController.TimeSinceLastClick < _switchTime;
 }

@@ -16,7 +16,7 @@ public class GroundClickRaycaster
         if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, _groundLayer))
         {
             Vector3 point = hit.point;
-            point.y = 0f;
+            //point.y = 0f;
             return point;
         }
 

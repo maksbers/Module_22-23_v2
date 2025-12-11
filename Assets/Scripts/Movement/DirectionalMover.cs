@@ -25,7 +25,7 @@ public class DirectionalMover
 
         _characterController.Move(CurrentVelocity * deltaTime);
 
-        ConstrainToGround();
+        //ConstrainToGround();
     }
 
     private void ConstrainToGround()
